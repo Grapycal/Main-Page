@@ -47,7 +47,8 @@
 }
 .content {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    max-width: 1600px;
     padding: 50px 50px;
     display: flex;
     flex-direction: row;
@@ -77,6 +78,7 @@
     padding-top: 56.25%;
     overflow: hidden;
     min-width: 300px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
 
 .intro-video {
@@ -149,7 +151,7 @@
     position: absolute;
     width: 7em;
     height: 4px;
-    background-color: #097409;
+    background-color: #075607;
     bottom:-0.3em;
     left: 70px;
 }
