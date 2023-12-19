@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mainpage-deploy
+  namespace: mainpage
+  labels:
+    app: mainpage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mainpage
+  template:
+    metadata:
+      labels:
+        app: mainpage
+    spec:
+      containers:
+      - name: mainpage
+        image: docker.io/patrickuuuu/grapycal-mainpage:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
