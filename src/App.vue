@@ -1,21 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import TestComp from './components/TestComp.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    <div class="wrapper">
-      <TestComp />
     
-      <HelloWorld msg="You erl;aebl;did it!" />
-    </div>
   </header>
-
+  <TitleSection />
   <main>
-    <TheWelcome />
   </main>
 </template>
 
