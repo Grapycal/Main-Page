@@ -7,7 +7,9 @@
             <h1>
                 <slot name="title"></slot>
             </h1>
-            <slot name="content"></slot>
+            <p class="content">
+                <slot name="content"></slot>
+            </p>
         </div>
     </div>
 </template>
@@ -29,7 +31,6 @@ const props = defineProps({
 <style scoped>
 .card {
     padding: 30px;
-    height: 277px;
     max-width: 1188px;
     border-radius: 13px;
     border: solid 3px #5D2A7C;
@@ -40,6 +41,7 @@ const props = defineProps({
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 /* if props.reverse, row-reverse */
 
@@ -58,15 +60,25 @@ const props = defineProps({
 
 .text {
     padding: 20px;
-    flex-grow: 1;
-    flex-shrink: 1
+    flex: 1 1 500px;
 }
+
+h1{
+    font-size: 40px;
+}
+
+.content{
+    font-size: 20px;
+}
+
 .img {
+    /* needed for responsiveness */
+    width: 0px; 
+    
     border-radius: 13px;
     margin: 20px;
-    width:40%;
-    flex-shrink: 0;
-    height:100%;
+    height: 200px;
+    flex: 1 0.1 30%;
     object-fit: cover;
 
     position: relative;
