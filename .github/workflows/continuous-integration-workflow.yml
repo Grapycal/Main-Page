@@ -1,0 +1,25 @@
+# .github/workflows/continuous-integration-workflow.yml
+
+# The name of the workflow which you can see when the action runs
+name: Run unit tests
+
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      # - name: Run unit tests
+        # run: npm test
