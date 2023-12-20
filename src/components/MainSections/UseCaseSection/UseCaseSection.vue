@@ -1,7 +1,7 @@
 <template>
     <div class="card-container">
         <!-- use v for to generate cards -->
-        <UseCaseCard v-for="usecase in usecases" :key="usecase.id" :img="usecase.img">
+        <UseCaseCard v-for="usecase in usecases" :key="usecase.id" :img="usecase.img" :title="usecase.title">
             {{ usecase.content }}
         </UseCaseCard>
     </div>
@@ -21,13 +21,15 @@ const props = defineProps({
                 id: number,
                 img: string,
                 content: string,
+                title: string
             }
         >,
         default: () => [
             {
                 id: 1,
                 img: "https://i.imgur.com/npw0hVR.png",
-                content: "Content",
+                content: "Deep Learning very good ouo",
+                title: "Deep Learning"
             },
             {
                 id: 2,
@@ -39,11 +41,11 @@ const props = defineProps({
                 img: "https://i.imgur.com/npw0hVR.png",
                 content: "Content",
             },
-                        {
-                            id: 3,
-                            img: "https://i.imgur.com/ZG9VEOD.png",
-                            content: "Content",
-                        }
+            {
+                id: 3,
+                img: "https://i.imgur.com/ZG9VEOD.png",
+                content: "Content",
+            }
         ]
     }
 

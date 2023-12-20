@@ -7,6 +7,14 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    DialogClose: typeof import('radix-vue')['DialogClose']
+    DialogContent: typeof import('radix-vue')['DialogContent']
+    DialogDescription: typeof import('radix-vue')['DialogDescription']
+    DialogOverlay: typeof import('radix-vue')['DialogOverlay']
+    DialogPortal: typeof import('radix-vue')['DialogPortal']
+    DialogRoot: typeof import('radix-vue')['DialogRoot']
+    DialogTitle: typeof import('radix-vue')['DialogTitle']
+    DialogTrigger: typeof import('radix-vue')['DialogTrigger']
     FeatureCard: typeof import('./src/components/FeatureSection/FeatureCard.vue')['default']
     FeatureSection: typeof import('./src/components/FeatureSection/FeatureSection.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']

@@ -1,9 +1,8 @@
 <template>
-    <li>
-        <div class="person-intro">
-            <h3>{{ props.name }}</h3>
-        </div>
-    </li>
+    <div class="person-intro">
+        <h3>{{ props.name }}</h3>
+        <p>{{ props.role }}</p>
+    </div>
 </template>
 
 <script setup lang="ts">
