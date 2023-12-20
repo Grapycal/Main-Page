@@ -78,7 +78,7 @@
     position: relative;
     padding-top: 56.25%;
     overflow: hidden;
-    min-width: 300px;
+    min-width: 250px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
 
