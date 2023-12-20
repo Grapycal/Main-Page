@@ -16,10 +16,11 @@
           <div class="bg-overlay"></div>
         </div>
       </div>
-      1220
-      ouo
+      <InfoSection />
+      
     </main>
   </div>
+  <FooterSection />
 </template>
 
 <style scoped>
@@ -78,12 +79,12 @@ header {
 .main-container{
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
 }
 
 main{
-  /* max-width: 1600px; */
+  width: 100%;
   margin: 0 auto;
   flex-grow: 1;
   height: 100%;

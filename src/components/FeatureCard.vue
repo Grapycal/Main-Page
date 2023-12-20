@@ -5,10 +5,10 @@
         <img class="img" :src="props.img" alt="feature image">
         <div class="text">
             <h1>
-                <slot name="title"></slot>
+                {{ props.title }}
             </h1>
             <p class="content">
-                <slot name="content"></slot>
+                <slot></slot>
             </p>
         </div>
     </div>
@@ -17,6 +17,10 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 const props = defineProps({
+    title: {
+        type: String,
+        default: "Title"
+    },
     img: {
         type: String,
         default: "https://i.imgur.com/npw0hVR.png"
@@ -30,7 +34,8 @@ const props = defineProps({
 
 <style scoped>
 .card {
-    padding: 30px;
+    padding: 20px;
+    width: 100%;
     max-width: 1188px;
     border-radius: 13px;
     border: solid 3px #5D2A7C;
@@ -42,12 +47,13 @@ const props = defineProps({
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    flex-basis: 100%;
 }
 /* if props.reverse, row-reverse */
 
 .card:not(.reverse) {
     flex-direction: row;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     left: -10px;
 }
 
@@ -60,25 +66,26 @@ const props = defineProps({
 
 .text {
     padding: 20px;
-    flex: 1 1 500px;
+    flex: 0 1 500px;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .content{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .img {
     /* needed for responsiveness */
     width: 0px; 
+    max-width: 500px;
     
     border-radius: 13px;
     margin: 20px;
     height: 200px;
-    flex: 1 0.1 30%;
+    flex: 1 1 300px;
     object-fit: cover;
 
     position: relative;

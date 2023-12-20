@@ -1,40 +1,21 @@
 <template>
     <div class="container">
-        <FeatureCard img="https://i.imgur.com/DFvavhw.png">
-            <template #title>
-                Interactive
-            </template>
-            <template #content>
-                <p>Run different part of code in a controllable order, watch variables in real-time, and easily track the active node</p>
-            </template>
+        <FeatureCard title="Interactive" img="https://i.imgur.com/DFvavhw.png">
+            Run different part of code in a controllable order, watch variables in real-time, and easily track the active node
         </FeatureCard>
-        <FeatureCard reverse="true">
-            <template #title>
-                Dynamic
-            </template>
-            <template #content>
-                <p>Modify the running graph for instant changes in its behavior, such as adjusting parameters, adding or removing nodes from a workflow, and terminating a loop</p>
-            </template>
 
+        <FeatureCard title="Dynamic" img="https://i.imgur.com/DFvavhw.png" reverse>
+            Modify the running graph for instant changes in its behavior, such as adjusting parameters, adding or removing nodes from a workflow, and terminating a loop
         </FeatureCard>
-        <FeatureCard>
-            <template #title>
-                Extendable
-            </template>
-            <template #content>
-                <p>Create custom nodes from Python libraries of the domain you like, such as deep learning, robotics, or music synthesis</p>
-            </template>
 
+        <FeatureCard title="Extendable" img="https://i.imgur.com/DFvavhw.png">
+            Create custom nodes from Python libraries of the domain you like, such as deep learning, robotics, or music synthesis
         </FeatureCard>
-        <FeatureCard reverse="true">
-            <template #title>
-                Collaborative
-            </template>
-            <template #content>
-                <p>With Grapycal’s extension system, nodes for various domains can be shared and mixed to form powerful tools or artworks</p>
-                <p>Btw, real-time collab is supported</p>
-            </template>
 
+        <FeatureCard title="Collaborative" img="https://i.imgur.com/DFvavhw.png" reverse>
+            With Grapycal’s extension system, nodes for various domains can be shared and mixed to form powerful tools or artworks
+            <br>
+            Btw, real-time collab is supported
         </FeatureCard>
     </div>
 </template>
