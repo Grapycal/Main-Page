@@ -70,6 +70,7 @@ const props = defineProps({
 }
 
 h1{
+    color: var(--mauve-5);
     font-size: 38px;
 }
 

@@ -54,7 +54,7 @@ h1{
 .img {
     flex: 1 1 500px;
     min-height: 0px;
-    border-radius: 13px;
+    border-radius: 3px;
     height: 160px;
     object-fit: cover;
 
