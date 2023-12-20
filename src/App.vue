@@ -16,7 +16,7 @@
           <div class="bg-overlay"></div>
         </div>
       </div>
-      <InfoSection />
+      <MainSection />
       
     </main>
   </div>

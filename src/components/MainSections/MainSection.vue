@@ -1,5 +1,5 @@
 <template>
-    <div class="info-section">
+    <div class="main-section">
     <SubSection title="Use Cases">
         <UseCaseSection/>
     </SubSection>
@@ -14,9 +14,13 @@
         </p>
     </SubSection>
 
-    <SubSection title="Contribute" />
+    <SubSection title="Contribute">
 
-    <SubSection title=People />
+    </SubSection>
+
+    <PeopleSection></PeopleSection>
+
+
     </div>
 </template>
 
@@ -30,7 +34,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.info-section {
+.main-section {
     max-width: 1400px;
     padding: 50px 50px;
     margin: auto;

@@ -7,10 +7,8 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    copy: typeof import('./src/components/SubSection copy.vue')['default']
-    FeatureCard: typeof import('./src/components/FeatureCard.vue')['default']
-    FeatureSection: typeof import('./src/components/FeatureSection.vue')['default']
-    FooterComp: typeof import('./src/components/FooterComp.vue')['default']
+    FeatureCard: typeof import('./src/components/FeatureSection/FeatureCard.vue')['default']
+    FeatureSection: typeof import('./src/components/FeatureSection/FeatureSection.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
@@ -19,13 +17,17 @@ declare module 'vue' {
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     InfoSection: typeof import('./src/components/InfoSection.vue')['default']
+    MainSection: typeof import('./src/components/MainSections/MainSection.vue')['default']
+    MainSections: typeof import('./src/components/MainSections/MainSections.vue')['default']
+    PeopleSection: typeof import('./src/components/MainSections/PeopleSection/PeopleSection.vue')['default']
+    PersonIntro: typeof import('./src/components/MainSections/PeopleSection/PersonIntro.vue')['default']
     ResponsiveXPos: typeof import('./src/components/ResponsiveXPos.vue')['default']
-    SubSection: typeof import('./src/components/SubSection.vue')['default']
+    SubSection: typeof import('./src/components/MainSections/SubSection.vue')['default']
     TestComp: typeof import('./src/components/TestComp.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     TitleSection: typeof import('./src/components/TitleSection.vue')['default']
-    UseCaseCard: typeof import('./src/components/UseCaseCard.vue')['default']
-    UseCaseSection: typeof import('./src/components/UseCaseSection.vue')['default']
+    UseCaseCard: typeof import('./src/components/MainSections/UseCaseSection/UseCaseCard.vue')['default']
+    UseCaseSection: typeof import('./src/components/MainSections/UseCaseSection/UseCaseSection.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }
