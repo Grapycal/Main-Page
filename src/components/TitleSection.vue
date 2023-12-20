@@ -3,19 +3,19 @@
     <div class="content">
         <!-- two column -->
         <div class="left">
-            <ResponsiveXPos x="20">
+            <ResponsiveXPos :x=20>
                 <div class="a">
                     A visual programming language based on Python 
                 </div>
             </ResponsiveXPos>
-            <ResponsiveXPos x="40" class="title-container">
+            <ResponsiveXPos :x=40 class="title-container">
                 <img src="@/assets/icon.png" class="icon" alt="icon">
                 <div class="b">
                     <div class="bar1"></div>
                     Grapycal
                 </div>
             </ResponsiveXPos>
-            <ResponsiveXPos x="70">
+            <ResponsiveXPos :x=70>
                 <div class="c">
                     Interactivity counts
                     <div class="bar2"></div>
@@ -47,8 +47,9 @@
 }
 .content {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 1600px;
+    margin: 0 auto;
     padding: 50px 50px;
     display: flex;
     flex-direction: row;
@@ -126,7 +127,7 @@
         font-size: 18px;
     }
     .b{
-        font-size: 60px;
+        font-size: 50px;
     }
     .c{
         font-size: 24px;
