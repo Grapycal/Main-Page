@@ -2,7 +2,8 @@
     <div class="card" :class="{reverse: props.reverse}">
 
         <!-- use the img prop -->
-        <img class="img" :src="props.img" alt="feature image">
+        <video v-if="isVideo" class="img" :src="props.img" alt="feature video" autoplay loop muted playsinline></video>
+        <img v-else class="img" :src="props.img" alt="feature image">
         <div class="text">
             <h1>
                 {{ props.title }}
@@ -15,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { computed, defineProps, reactive } from 'vue'
 const props = defineProps({
     title: {
         type: String,
@@ -30,6 +31,7 @@ const props = defineProps({
         default: false
     }
 })
+const isVideo = props.img.endsWith(".mp4")
 </script>
 
 <style scoped>

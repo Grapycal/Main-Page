@@ -84,8 +84,8 @@ const openDialog = () => {
     padding: 10px;
     flex: 0 0 250px;
     border-radius: 13px;
-    border: solid 3px #5D2A7C;
-    background-color: #27163C60;
+    background-color: var(--mauve-12);
+    border: solid 1px var(--mauve-11);
     position: relative;
     display: flex;
     flex-direction: column;

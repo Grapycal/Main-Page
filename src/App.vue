@@ -59,6 +59,7 @@ header {
   height: 100%;
   z-index: -2;
   object-fit: cover;
+  mask-image: linear-gradient(180deg, rgb(0, 0, 0,0) 0%, rgba(0,0,0,1) 10%);
 }
 
 .bg-overlay{

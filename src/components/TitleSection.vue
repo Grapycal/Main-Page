@@ -1,5 +1,9 @@
 <template>
-    <img class="bg-img" src="https://i.imgur.com/D3PBtFb.png" alt="background image">
+    <div class="bg-img-container" ref="bgImg">
+        <img class="bg-img" src="https://i.imgur.com/lTle1Kb.png" alt="background image">
+        <div class="bg-img-overlay"></div>
+    </div>
+
     <div class="content">
         <!-- two column -->
         <div class="left">
@@ -31,19 +35,70 @@
     </div>
 </template>
 
+<script>
+//let bg-img scroll 80% slower than the page
+
+import ResponsiveXPos from '@/components/ResponsiveXPos.vue'
+
+export default {
+    name: 'TitleSection',
+    components: {
+        ResponsiveXPos
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+        handleScroll() {
+            this.$refs.bgImg.style.top = `${window.scrollY * 0.8}px`
+            this.$refs.bgImg.style.opacity = `${1 - window.scrollY / 1500}`
+        }
+    }
+}
+
+</script>
+
+
 <style scoped>
 
 
 
 
-.bg-img {
+.bg-img-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
     z-index: -1;
+    mask-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.0) 100%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    /* mask-mode: alpha; */
+    
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-img-overlay{
+    /* content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 100%);
+    mix-blend-mode: multiply; */
+
 }
 .content {
     height: 100vh;
@@ -102,12 +157,14 @@
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
     color: var(--mauve-5);
+    /* text ouline */
+    text-shadow: 0 0 10px #000000;
 
 }
 .c{
     position: relative;
     font-family: 'poppins', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--mauve-7);
 }
 
