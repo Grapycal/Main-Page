@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="cont">
         <FeatureCard title="Interactive" img="https://cdn.discordapp.com/attachments/1181143637178982483/1187109070835023962/b.mp4">
             Run different part of code in a controllable order, watch variables in real-time, and easily track the active node
         </FeatureCard>
@@ -21,11 +21,13 @@
 </template>
 
 <style scoped>
-.container {
+.cont {
     padding: 60px 0px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     background-size: cover;
+    /* background-color: #090E16; */
+    background: linear-gradient(180deg, #090e1600 0%, #090E16 50%);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="bg-img-container" ref="bgImg">
+    <div class="bg-img-underlay"></div>
         <img class="bg-img" src="https://i.imgur.com/lTle1Kb.png" alt="background image">
-        <div class="bg-img-overlay"></div>
     </div>
 
     <div class="content">
@@ -25,6 +25,25 @@
                     <div class="bar2"></div>
                 </div>
             </ResponsiveXPos>
+            <div class="flex flex-column w-full justify-center mt-16 gap-4">
+                <!-- two buttons , one for download, one for go to github -->
+                <!-- use tailwind -->
+                <a href="#get-started">
+                    <button class="bg-violet-900 hover:bg-violet-900 border-2 border-violet-700 text-white font-bold py-2 px-4 rounded-full text-lg flex items-center">
+                        Download
+                    </button>
+                </a>
+                <a href="https://github.com/grapycal/grapycal">
+                    <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full text-lg border-2 border-gray-500 flex items-center">
+                        <!-- assets/github.svg -->
+                        <img src="@/assets/github.svg" alt="github" class="w-7 h-7 inline-block mr-2 fill-white">
+                        
+                        Visit GitHub repository
+                    </button>
+                </a>
+                    
+            </div>
+                
         </div>
         <div class="right">
             <div class="intro-video-container">
@@ -64,7 +83,7 @@ const handleScroll = () => {
     // prevent 'bgImg.value' is possibly 'null'
     
     bgImg.value.style.top = `${window.scrollY * 0.8}px`
-    bgImg.value.style.opacity = `${1 - window.scrollY / 1000}`
+    // bgImg.value.style.opacity = `${1 - window.scrollY / 1000}`
 }
 
 onMounted(() => {
@@ -80,9 +99,6 @@ onBeforeUnmount(() => {
 
 <style scoped>
 
-
-
-
 .bg-img-container {
     position: absolute;
     top: 0;
@@ -90,34 +106,32 @@ onBeforeUnmount(() => {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    mask-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.0) 100%);
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    /* mask-mode: alpha; */
-    
 }
+
+.bg-img-underlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #090E16;
+    z-index: -1;
+}
+    
 
 .bg-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    mask-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.0) 100%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    opacity: 0.8;
 }
 
-.bg-img-overlay{
-    /* content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 100%);
-    mix-blend-mode: multiply; */
-
-}
 .content {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;

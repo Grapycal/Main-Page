@@ -1,6 +1,6 @@
 <template>
-    <h1> {{ props.title }}</h1>
-    <div class="container">
+    <h1 :id="titleId" class="text-4xl font-bold">{{ props.title }}</h1>
+    <div class="cont">
         <slot></slot>
     </div>
 </template>
@@ -14,5 +14,7 @@ const props = defineProps({
         default: "Title"
     }
 })
+
+const titleId = props.title.toLowerCase().replace(" ", "-")
 
 </script>

@@ -11,10 +11,10 @@
     <main>
       <div style="position: relative;">
         <FeatureSection />
-        <div class="bg-img">
+        <!-- <div class="bg-img">
           <img src="https://i.imgur.com/npw0hVR.png" alt="bg" />
           <div class="bg-overlay"></div>
-        </div>
+        </div> -->
       </div>
       <MainSection />
       
@@ -61,6 +61,8 @@ header {
   object-fit: cover;
   mask-image: linear-gradient(180deg, rgb(0, 0, 0,0) 0%, rgba(0,0,0,1) 10%);
 }
+
+
 
 .bg-overlay{
   position: absolute;

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="cont">
         <div class="left"></div>
         <slot class="slot"></slot>
         <div class="right"></div>
@@ -19,7 +19,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.container {
+.cont{
     position: relative;
     display: flex;
     flex-direction: row;
