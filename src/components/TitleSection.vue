@@ -35,29 +35,45 @@
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
 //let bg-img scroll 80% slower than the page
 
-import ResponsiveXPos from '@/components/ResponsiveXPos.vue'
+// export default {
+//     name: 'TitleSection',
+//     components: {
+//         ResponsiveXPos
+//     },
+//     mounted() {
+//         window.addEventListener('scroll', this.handleScroll)
+//     },
+//     beforeDestroy() {
+//         window.removeEventListener('scroll', this.handleScroll)
+//     },
+//     methods: {
+//         handleScroll() {
+//             this.$refs.bgImg.style.top = `${window.scrollY * 0.8}px`
+//             this.$refs.bgImg.style.opacity = `${1 - window.scrollY / 1500}`
+//         }
+//     }
+// }
 
-export default {
-    name: 'TitleSection',
-    components: {
-        ResponsiveXPos
-    },
-    mounted() {
-        window.addEventListener('scroll', this.handleScroll)
-    },
-    beforeDestroy() {
-        window.removeEventListener('scroll', this.handleScroll)
-    },
-    methods: {
-        handleScroll() {
-            this.$refs.bgImg.style.top = `${window.scrollY * 0.8}px`
-            this.$refs.bgImg.style.opacity = `${1 - window.scrollY / 1500}`
-        }
-    }
+// this is the ts version of the above code
+import { onMounted, onBeforeUnmount, ref } from 'vue'
+const bgImg: any = ref(null)
+const handleScroll = () => {
+    // prevent 'bgImg.value' is possibly 'null'
+    
+    bgImg.value.style.top = `${window.scrollY * 0.8}px`
+    bgImg.value.style.opacity = `${1 - window.scrollY / 1000}`
 }
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onBeforeUnmount(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 
 </script>
 
