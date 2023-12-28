@@ -59,8 +59,8 @@ const props = defineProps({
 .card-container {
     overflow-x: scroll;
     display: flex;
-    height: 300px;
-    padding: 50px 20px;
+    height: 250px;
+    padding: 20px 20px;
     margin: auto;
     gap: 20px;
     justify-items: start;

@@ -1,5 +1,6 @@
 <template>
-    <h1 :id="titleId" class="text-4xl font-bold">{{ props.title }}</h1>
+    <h1 :id="titleId" class="text-4xl font-bold mb-5 mt-10 text-gray-300
+    ">{{ props.title }}</h1>
     <div class="cont">
         <slot></slot>
     </div>
