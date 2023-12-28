@@ -25,23 +25,13 @@
                     <div class="bar2"></div>
                 </div>
             </ResponsiveXPos>
-            <div class="flex flex-column w-full justify-center mt-16 gap-4">
+            <div class="flex flex-column w-full justify-center mt-16 gap-4 flex-wrap">
                 <!-- two buttons , one for download, one for go to github -->
                 <!-- use tailwind -->
-                <a href="#get-started">
-                    <button class="bg-violet-900 hover:bg-violet-900 border-2 border-violet-700 text-white font-bold py-2 px-4 rounded-full text-lg flex items-center">
-                        Download
-                    </button>
-                </a>
-                <a href="https://github.com/grapycal/grapycal">
-                    <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full text-lg border-2 border-gray-500 flex items-center">
-                        <!-- assets/github.svg -->
-                        <img src="@/assets/github.svg" alt="github" class="w-7 h-7 inline-block mr-2 fill-white">
-                        
-                        Visit GitHub repository
-                    </button>
-                </a>
-                    
+                <TitleSectionButton class="bg-purple-button  border-2 border-purple-button-border " text="Download" link="#get-started"></TitleSectionButton>
+
+                <TitleSectionButton class="bg-gray-900 border-2 border-gray-700" text="Visit GitHub repository" link="https://github.com/grapycal/grapycal" icon="src/assets/github.svg"></TitleSectionButton>
+                <TitleSectionButton class="bg-gray-900 border-2 border-gray-700" text="Join Discord" link="https://discord.com/invite/adNQcS42CT" icon="https://www.svgrepo.com/show/353655/discord-icon.svg"></TitleSectionButton>
             </div>
                 
         </div>
@@ -131,7 +121,8 @@ onBeforeUnmount(() => {
 }
 
 .content {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 850px;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;

@@ -5,7 +5,13 @@ export default {
       "./src/**/*.{vue,js,ts,jsx,tsx}",,
     ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'discord': '#5566E2',
+        'purple-button': '#5425b560',
+        'purple-button-border': '#49307b',
+      }
+    },
   },
   plugins: [],
 }

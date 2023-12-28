@@ -1,15 +1,15 @@
 <template>
     <div class="cont">
         <FeatureCard title="Interactive" img="https://cdn.discordapp.com/attachments/1181143637178982483/1187109070835023962/b.mp4">
-            Run different part of code in a controllable order, watch variables in real-time, and easily track the active node
+            Run different part of code in an arbitary order, watch data in real-time, and easily track the active node
         </FeatureCard>
 
         <FeatureCard title="Dynamic" img="https://i.imgur.com/DFvavhw.png" reverse>
-            Modify the running graph for instant changes in its behavior, such as adjusting parameters, adding or removing nodes from a workflow, and terminating a loop
+            Modify the running graph on the fly for instant changes in its behavior, including adjusting parameters, adding or removing nodes from a workflow, and terminating a loop
         </FeatureCard>
 
         <FeatureCard title="Extendable" img="https://media.discordapp.net/attachments/1181143637178982483/1187115414967300127/image.png?ex=6595b662&is=65834162&hm=7c88484004d12fa93c1528ae1e1689a16062c5af9235e380db0184d49aeb506f&=&format=webp&quality=lossless&width=1440&height=524">
-            Create custom nodes from Python libraries of the domain you like, such as deep learning, robotics, or music synthesis
+            Create custom nodes from Python libraries of any domain, such as deep learning, robotics, or music synthesis
         </FeatureCard>
 
         <FeatureCard title="Collaborative" img="https://i.imgur.com/DFvavhw.png" reverse>
