@@ -35,6 +35,17 @@ const props = defineProps({
                 twitter: "eri24816",
                 linkedin: "eric-chen-789894239"
             },
+            {
+                name: "Ping-Yu Chen (greenslime1024)",
+                role: "backend dev",
+                github: "greenslime1024",
+            },
+            {
+                name: "Cheng-Shian Yeh (yeh-sudo)",
+                role: "backend dev",
+                github: "yeh-sudo",
+                linkedin: "yeh-profile"
+            },
         ]
     }
 })

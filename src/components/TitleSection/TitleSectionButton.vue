@@ -2,6 +2,7 @@
     <a :href="props.link" class="text-white py-2 px-4 rounded-full text-lg flex items-center text-gray-300">
         
         <img v-if="props.icon" :src="props.icon" alt="icon" class="w-7 h-7 inline-block mr-2 fill-white">
+        <slot></slot>
         {{ props.text }}
         
     </a>
