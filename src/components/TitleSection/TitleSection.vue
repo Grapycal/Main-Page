@@ -30,7 +30,7 @@
                 <!-- use tailwind -->
                 <TitleSectionButton class="bg-purple-button  border-2 border-purple-button-border " text="Download" link="#get-started"></TitleSectionButton>
 
-                <TitleSectionButton class="bg-gray-900 border-2 border-gray-700" text="Visit GitHub repository" link="https://github.com/grapycal/grapycal" ><div class="fa fa-2x fa-github"> &nbsp;</div></TitleSectionButton>
+                <TitleSectionButton class="bg-gray-900 border-2 border-gray-700" text="Visit GitHub repository" link="https://github.com/grapycal/grapycal" ><div class="fa fa-1x fa-github"> &nbsp;</div></TitleSectionButton>
                 <TitleSectionButton class="bg-gray-900 border-2 border-gray-700" text="Join Discord" link="https://discord.com/invite/adNQcS42CT" icon="https://www.svgrepo.com/show/353655/discord-icon.svg"></TitleSectionButton>
             </div>
                 

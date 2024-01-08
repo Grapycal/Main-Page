@@ -40,11 +40,32 @@ const props = defineProps({
                 role: "backend dev",
                 github: "greenslime1024",
             },
+
+            {
+                name: "Ian Chang (secminhr)",
+                role: "backend dev, extension dev",
+                intro: "Keep things simple",
+                github: "secminhr"
+            },
+            {
+                name: "Yu-Heng Li (Patrickuuuu)",
+                role: "backend dev, devops, sre",
+                intro: "❤️K8s ",
+                github: "taro0513",
+                linkedin: "Patrickuuuu"
+            },
             {
                 name: "Cheng-Shian Yeh (yeh-sudo)",
                 role: "backend dev",
                 github: "yeh-sudo",
                 linkedin: "yeh-profile"
+            },
+            {
+                name:"Wei-Hsin Yeh (weihsinyeh)",
+                role:"numpy extension, opencv extension",
+                github:"weihsinyeh",
+                linkedin:"wei-hsin-yeh-1b4000215",
+                medium:"https://medium.com/@weihsinyeh168"
             },
         ]
     }

@@ -42,7 +42,7 @@ const props = defineProps({
 .column {
     
     max-width: 1400px;
-    padding: 50px 50px;
+    padding: 50px 20px;
     margin: auto;
 }
 </style>
