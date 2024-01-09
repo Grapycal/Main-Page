@@ -12,7 +12,7 @@
             Create custom nodes from Python libraries of any domain, such as deep learning, robotics, or music synthesis
         </FeatureCard>
 
-        <FeatureCard title="Collaborative" img="https://i.imgur.com/DFvavhw.png" reverse>
+        <FeatureCard title="Collaborative" img="https://i.imgur.com/rm3MOlg.png" reverse>
             With Grapycal’s extension system, nodes for various domains can be shared and mixed to form powerful tools or artworks
             <br>
             Btw, real-time collab is supported

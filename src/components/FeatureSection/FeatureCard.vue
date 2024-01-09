@@ -70,11 +70,6 @@ const isVideo = props.img.endsWith(".mp4")
     flex: 0 1 500px;
 }
 
-h1{
-    color: var(--mauve-5);
-    font-size: 38px;
-}
-
 .content{
     font-size: 16px;
 }

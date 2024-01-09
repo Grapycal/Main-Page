@@ -2,8 +2,8 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="person-intro mb-4">
-        <div class="flex flex-row gap-4 mb-2">
-        <h3 class="text-xl font-bold text-gray-300">{{ props.name }}</h3>
+        <div class="flex flex-row gap-4">
+        <h3>{{ props.name }}</h3>
             <div class="flex flex-row gap-1">
                 <a v-if="props.github" :href="'https://github.com/'+props.github" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github  flex content-center justify-center"> </a>
                 <a v-if="props.twitter" :href="'https://x.com/'+props.twitter" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-twitter  flex content-center justify-center"></a>

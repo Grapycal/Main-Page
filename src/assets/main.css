@@ -73,3 +73,16 @@ a,
   }
 
 }
+
+/* apply tailwind to tags */
+@layer base {
+  h1 {
+    @apply text-2xl text-gray-300 font-bold my-4;
+  }
+  h2 {
+    @apply text-xl my-1;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}
