@@ -13,7 +13,7 @@
                 </div>
             </ResponsiveXPos>
             <ResponsiveXPos :x=40 class="title-container">
-                <img src="@/assets/icon.png" class="icon" alt="icon">
+                <img src="https://i.imgur.com/cfGLoZa.png" class="icon" alt="icon">
                 <div class="b">
                     <div class="bar1"></div>
                     Grapycal
