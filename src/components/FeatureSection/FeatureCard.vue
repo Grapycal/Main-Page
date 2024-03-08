@@ -81,7 +81,7 @@ const isVideo = props.img.endsWith(".mp4")
     
     border-radius: 13px;
     margin: 20px;
-    height: 200px;
+    height: 240px;
     flex: 1 1 300px;
     object-fit: cover;
 

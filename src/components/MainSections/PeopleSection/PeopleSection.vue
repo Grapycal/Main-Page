@@ -9,7 +9,6 @@
             <img class="contributors" src="https://contrib.rocks/image?repo=grapycal/grapycal" />
         </a>
     </SubSection>
-    testabc
 </template>
 
 <script setup lang="ts">
