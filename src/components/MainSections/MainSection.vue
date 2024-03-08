@@ -22,8 +22,8 @@
                 <h2>Documentation
                 </h2>
                     <ul>
-                        <li><a href="https://docs.grapycal.org/getting_started/installation.html">Getting Started</a></li>
-                        <li><a href="https://docs.grapycal.org/contribution_guide/contribution.html">Contributing</a></li>
+                        <li><a href="https://wiki.grapycal.org/index.php?title=Installation">Getting Started</a></li>
+                        <li><a href="https://wiki.grapycal.org/index.php?title=Contribution">Contributing</a></li>
                     </ul>
             </SubSection>
 
@@ -35,12 +35,10 @@
                 </p>
                 <h2>What you can do</h2>
                 <ul class="list-disc list-inside ml-4">
-                            <li class="mb-2">Add features or fix bugs to the <a href="https://docs.grapycal.org/contribution_guide/project_overview.html#backend"
-                                    >backend</a>.</li>
-                            <li class="mb-2">Add features or fix bugs to the <a href="https://docs.grapycal.org/contribution_guide/project_overview.html#frontend"
-                                    >frontend</a>.</li>
+                            <li class="mb-2">Add features or fix bugs to the backend.</li>
+                            <li class="mb-2">Add features or fix bugs to the frontend.</li>
                             <li class="mb-2">Create a new extension for any domain you like (such as image processing or music
-                                synthesis) by following <a href="https://docs.grapycal.org/contribution_guide/../getting_started/extension.html"
+                                synthesis) by following <a href="https://wiki.grapycal.org/index.php?title=Extension"
                                     >tutorial</a>.</li>
                             <li class="mb-2">Improve current extensions by adding new nodes or fixing bugs. Existing extensions are in
                                 the extensions folder of the <a href="https://github.com/Grapycal/Grapycal"
@@ -56,9 +54,9 @@
                 
                 <h2>To start contributing</h2>
                 <ol>
-                    <li>Please <a href="https://docs.grapycal.org/contribution_guide/../getting_started/installation.html#install-from-source">install Grapycal from source</a>.</li>
+                    <li>Please <a href="hhttps://wiki.grapycal.org/index.php?title=Installation#Install%20from%20source">install Grapycal from source</a>.</li>
                     <li>Play around with Grapycal and feel how Grapycal helps you as a user. Find out what you like and what you don't like. If you feel something is missing, you can add it and create a <a href="https://github.com/Grapycal/Grapycal/pulls">pull request</a> or <a href="https://github.com/Grapycal/Grapycal/issues">open an issue</a>.</li>
-                    <li>Refer to the <a href="https://docs.grapycal.org/contribution_guide/project_overview.html">project overview</a> to understand the project structure.</li>
+                    <li>Refer to the <a href="https://wiki.grapycal.org/index.php?title=Application_Overview">project overview</a> to understand the project structure.</li>
                     <li>If you don't know where to start, visit the <a href="https://github.com/orgs/Grapycal/projects/2/views/1">Project Board</a>.
                          Find a topic that interests you and assign yourself to it. If you have a new idea, you can also create a new topic.</li>
                 </ol>

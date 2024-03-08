@@ -22,7 +22,6 @@
                   {{ props.title  }}
                 </DialogTitle>
                 <DialogDescription class="DialogDescription">
-                  Make changes to your profile here. Click save when you're done.
                 </DialogDescription>
                 <img class="img" :src="props.img" alt="feature image">
                 <slot></slot>
@@ -62,7 +61,7 @@ import {
 const props = defineProps({
     img: {
         type: String,
-        default: "https://i.imgur.com/npw0hVR.png"
+        default: "https://i.imgur.com/npw0hVR.png",
     },
     title: {
         type: String,
@@ -112,7 +111,7 @@ h1{
     flex: 1 1 500px;
     min-height: 0px;
     border-radius: 3px;
-    height: 160px;
+    height: 500px;
     object-fit: cover;
 
     position: relative;
@@ -145,7 +144,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
-  max-width: 450px;
+  max-width: 800px;
   max-height: 85vh;
   padding: 25px;
   animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);

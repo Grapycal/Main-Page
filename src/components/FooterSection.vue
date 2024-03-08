@@ -3,7 +3,7 @@
         <div class="center">
             <p>
                 © 2024 Grapycal team |
-                <a href="https://github.com/Grapycal/Grapycal">GitHub</a> | <a href="https://docs.grapycal.org">Documentation</a> |
+                <a href="https://github.com/Grapycal/Grapycal">GitHub</a> | <a href="https://wiki.grapycal.org">Documentation/Wiki</a> |
                 <a href="https://www.facebook.com/groups/1504742843657956">Facebook</a> | <a href="https://discord.com/invite/adNQcS42CT">Discord</a>
             </p>
             <p>

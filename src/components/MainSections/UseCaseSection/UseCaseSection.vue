@@ -27,24 +27,25 @@ const props = defineProps({
         default: () => [
             {
                 id: 1,
-                img: "https://i.imgur.com/npw0hVR.png",
+                img: "https://i.imgur.com/egHMKy5.png",
                 content: "Deep Learning very good ouo",
                 title: "Deep Learning"
             },
             {
                 id: 2,
-                img: "https://i.imgur.com/npw0hVR.png",
-                content: "Cont3qgent",
+                title: "Fractal",
+                img: "https://i.imgur.com/McUod9U.png",
+                content: "",
             },
             {
                 id: 3,
-                img: "https://i.imgur.com/npw0hVR.png",
-                content: "Content",
+                img: "https://i.imgur.com/ZaKkvlb.png",
+                title: "Image Processing",
             },
             {
                 id: 3,
-                img: "https://i.imgur.com/ZG9VEOD.png",
-                content: "Content",
+                img: "https://i.imgur.com/89zVRqf.png",
+                title: "Physics Simulation",
             }
         ]
     }
