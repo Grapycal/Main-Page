@@ -54,7 +54,7 @@
                 
                 <h2>To start contributing</h2>
                 <ol>
-                    <li>Please <a href="hhttps://wiki.grapycal.org/index.php?title=Installation#Install%20from%20source">install Grapycal from source</a>.</li>
+                    <li>Please <a href="https://wiki.grapycal.org/index.php?title=Installation#Install%20from%20source">install Grapycal from source</a>.</li>
                     <li>Play around with Grapycal and feel how Grapycal helps you as a user. Find out what you like and what you don't like. If you feel something is missing, you can add it and create a <a href="https://github.com/Grapycal/Grapycal/pulls">pull request</a> or <a href="https://github.com/Grapycal/Grapycal/issues">open an issue</a>.</li>
                     <li>Refer to the <a href="https://wiki.grapycal.org/index.php?title=Application_Overview">project overview</a> to understand the project structure.</li>
                     <li>If you don't know where to start, visit the <a href="https://github.com/orgs/Grapycal/projects/2/views/1">Project Board</a>.
