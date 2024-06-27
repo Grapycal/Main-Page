@@ -26,7 +26,7 @@
                     <p class="mb-4">
                         In this back-and-forth process between humans and machines, using traditional Python execution
                         methods or Jupyter notebooks can be cumbersome. Therefore, we need the higher interactivity
-                        provided by Grapycal.
+                        provided by Grapycal. 
                     </p>
                 </div>
             </SubSection>
@@ -42,7 +42,7 @@
                 </a>
 
             </SubSection>
-
+a
 
             <PeopleSection></PeopleSection>
         </div>
