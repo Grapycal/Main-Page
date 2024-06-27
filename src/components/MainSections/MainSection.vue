@@ -36,7 +36,7 @@
                     class="text-white py-2 px-4 rounded-md flex items-center text-gray-400 justify-center text-lg">
                     Documentation
                 </a>
-                <a href="https://resource.grapycal.com/releases/demo/"
+                <a href="https://docs.grapycal.com/latest/docs/get-started-6de726/installation-b8566b/"
                     class="text-white py-2 px-4 rounded-md flex items-center text-gray-400 justify-center text-lg">
                     Download Now
                 </a>

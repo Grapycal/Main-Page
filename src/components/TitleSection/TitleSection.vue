@@ -28,7 +28,7 @@
             <div class="flex flex-column w-full justify-center mt-16 gap-4 flex-wrap">
                 <!-- two buttons , one for download, one for go to github -->
                 <!-- use tailwind -->
-                <TitleSectionButton class="w-60 bg-green-900  border-2 border-green-800 " text="Download Now" link="https://resource.grapycal.com/releases/demo/" icon="https://i.imgur.com/cfGLoZa.png"></TitleSectionButton>
+                <TitleSectionButton class="w-60 bg-green-900  border-2 border-green-800 " text="Download Now" link="https://docs.grapycal.com/latest/docs/get-started-6de726/installation-b8566b/" icon="https://i.imgur.com/cfGLoZa.png"></TitleSectionButton>
 
                 <TitleSectionButton class="w-60 bg-gray-900 border-2 border-gray-700" text="Join Discord" link="https://discord.com/invite/adNQcS42CT" icon="https://www.svgrepo.com/show/353655/discord-icon.svg"></TitleSectionButton>
             </div>
