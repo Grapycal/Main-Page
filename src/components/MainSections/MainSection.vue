@@ -42,7 +42,7 @@
                 </a>
 
             </SubSection>
-a
+
 
             <PeopleSection></PeopleSection>
         </div>
